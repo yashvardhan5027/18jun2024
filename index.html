@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>menu</title>
+    <style>
+
+              /*body*/
+              body{
+        background-image: url(./img/itachi.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgb(25, 21, 24);
+
+     }  
+   .nav1{
+     height: 50px;
+     width: 1280px;
+     background-color: #574f4f;
+     margin: 20px auto;
+   }    
+   .nav1 > ul{
+    list-style: none;
+   } 
+   .nav1 > ul > li{
+    display: inline-block; 
+    float: left;
+                      
+   }
+   .nav1 > ul > li > a{
+                   display: inline-block;    /*aadvya line madhe*/
+                   height: 12px;
+                   padding: 19px;
+                   line-height: 12px;    /* font box center*/
+                    color: white;
+                    font-family:Arial, Helvetica, sans-serif ;    /*font style*/
+                    font-size: 13px;
+                    text-decoration: none;            /*a tag underline delete*/
+
+   }   
+   .active{
+    background-color: #ff6347;
+   } 
+   
+   nav > ul > li:hover a.ex1{
+    background-color: hsl(9, 100%, 64%);
+   } 
+   .shravani{
+       background-image: url(./img/uchiha3.jpg);
+       background-repeat: no-repeat;
+       background-size: 20px 20px;
+       background-position: 0px 15px;
+   }
+   .ul2{
+     width: 220px;
+     height: 300px;
+     position: absolute;
+     top: 50px;
+     left: 0px;
+     list-style: none;
+     padding-left: 0px;  /* (<-) left gap complite */
+   }
+   .ul1 > li{
+    position: relative;
+   }
+   .ul2 > li > a{display: block; /* use to inline element ex- <> single  ex- width height work*/
+    background-color: #ffffff;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    line-height: 60px;  /* height and line height same value  */
+    padding-left: 30px;
+    
+   }
+   .ul2 > li:hover a{
+    background-color: #ff6347;                      
+  }
+.yash{
+  font-family: 'Franklin Gothic Medium' 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.ul3{
+  width: 200px;
+  height:266px;
+  background-color: rgb(176, 170, 170);
+  position: absolute;      /* in home  */
+ top: 0px;
+ left: 220px;
+ padding-left: 0px;
+ border: dashed;
+ border-color: red;
+}
+   .ul3 > .uchiha{
+                background-image: url("./img/sharingan.png");
+                color:  rgb(246, 254, 255);
+                text-shadow: 0px 1px;
+                background-repeat: no-repeat;
+             position: absolute;   
+           background-size: cover;
+                background-position: center;
+             background-size: 80%;             
+                }
+   .sub{
+    display: none;
+   }
+   .ul1 > li:hover > .sub{
+    display: block;
+   }
+   .ul2 > li:hover > .sub1{
+    display:  block;
+   }
+  
+   .ul4 > .senju{
+    width: 200px;
+    top: 45px;
+  left: -205px;
+ padding-left: 0px;
+ height: 150px;
+ color:  rgb(255, 249, 255);
+ border: dashed;
+   border-color: red;
+   position: absolute;
+   background-image: url(img/senju.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+                background-position: center;
+             background-size: 100%;  
+             background-color: rgb(176, 170, 170);  
+             text-shadow: 0px 1px;  
+
+   }
+   table {
+    border: 1px solid;
+    width: 820px;
+    height:  450px;
+    border-color: white;
+    position: absolute;
+   }
+   td{
+     width: 100px;
+     height: 450px;
+     border: 2px solid;
+     border: dashed rgb(0, 0, 0);
+     
+   }
+   th{
+         width: 100px;
+         height: 100px;
+         border: 2px solid;
+         border-color: rgb(0, 0, 0);
+   }
+   .th1{                             /*itachi*/
+      background-image: url("img/itachi\ name.jpeg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+   .ul1 > li:hover > .div1{
+    display: block;
+   } 
+   .div1{
+     display: none;
+   }
+   .tdc{
+    background-color: #574f4f;
+   }
+    
+   .i1{
+      width: 150px;
+      height: 100px;
+   }
+   .th2{                                /*madara*/
+        background-color:  rgb(255, 249, 249);
+        background-image: url("img/madra.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+   }
+   .m1{
+    width: 180px;
+    height: 100px;
+   }
+ .th3{                                 /*obito*/
+  background-color: white;
+     background-image: url("./img/obio1\ name.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-size: cover;
+ }
+ .o1{
+      width: 160px;
+      height: 100px;
+ }
+ .th4{                               /*sasuke*/
+  background-color: rgb(255, 255, 255);
+  background-image: url("img/sasuke\ name.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+ }
+ .s1{
+     width: 190px;
+     height: 100px;
+ }
+  
+ .div2{    
+     /*image*/
+   width: 1020px;   
+   height: 650px;
+   background-color: white;
+   position: absolute;
+   left: -500px;
+   display: none;
+   }
+   .div-ul1{
+    height: 200px;
+    list-style: none;
+    padding: 0px;
+   }
+   .div2 > .div-ul1 > li{
+    display: inline-block;
+    border: 1px dashed green;
+    height: 100%;
+    width: 193px;
+    background-color: gray;
+   }
+  
+   .div2 > .div-ul1 > li > a > .comm2{
+    width: 180px;
+    height: 150px;
+    margin-left: 7px;
+    margin-top: -15px;
+    border: 2px solid black;
+   }
+   .comm3{
+     text-align: center;
+     font-size: 16px; 
+   }
+   .ul1 > li:hover > .div2{
+    display: block;
+   }
+   .jk1{
+    width: 250px;
+    height: 300px;
+    padding-left: 2px;
+   }
+   .div-ul2{
+    list-style: none;
+    padding: 0px;
+   }
+   .div-ul2 > li{
+    display: inline-block;
+   }
+   .jk2{
+    width: 100px;
+    height: 150px;
+    padding-left: 2px;
+   }
+  
+
+
+
+    </style>
+
+
+</head>
+<body>
+       <div class="yash">create by -shravani jarag and yshvardhan jarag</div>
+    <nav class="nav1"> 
+                    <ul class="ul1">
+                       <li>
+                        <a href="#" class="shravani ex1">Uchiha Logo  </a> </li>
+                       <li>
+                        <a href="#" class="active ex1">Active </a></li>
+
+                        <li>
+                        <a href="#" class="ex1">Clan Names <i class="fa fa-angle-down"></i> </a>
+                        <ul class="ul2 sub"> 
+                                                         
+                                     <li> <a href="#"> Uchiha clan  <i class='fa fa-angle-right'>  </i></a> 
+                                       <ul class="ul3 sub sub1 ">
+                                              <p class="uchiha comm"> The Uchiha Clan (うちは一族, Uchiha Ichizoku) is a well known clan of Konohagakure,
+                                                [1] reputed to be the village's strongest because of their Sharingan and natural battle prowess.[2]
+                                                 After helping found Konoha decades ago,   
+                                                 the Uchiha grew increasingly isolated from the village's affairs,
+                                                  culminating in most of their deaths during the Uchiha Clan Downfall.   </p>     
+                                       </ul>
+                                    </li>  
+
+                                     <li> <a href="#"> <i class='fa fa-angle-left'> </i> Senju clan   </i></a>
+                                      <ul class="ul4 sub sub1">
+                                        <p class="senju">    Senju Clan As descendants of Asura Ōtsutsuki, 
+                                          the Senju inherited his powerful life force and chakra, 
+                                          and through Hashirama Senju eventually manifested as Wood Release. 
+                                          It was thought that the Senju's strength was based in love.     </p>     
+                                     </ul>   
+                                    </li>  
+                                     <li> <a href="#"> Uzumaki clan   <i class='fa fa-angle-right'> </i></i></a>
+                                     </li>  
+                                     <li> <a href="#">  <i class='fa fa-angle-left'> </i> Sarotobi clan  </a>
+                                     </li>  
+                                     <li> <a href="#"> Hagoromo clan  <i class='fa fa-angle-right'> </i> </a>
+                                     </li>
+                                       
+                        </ul>
+                        </li>
+
+                       <li>
+                         <a href="#" class="ex1">Mega Menu <i class="fa fa-angle-down"></i> </a >
+                        <div class="div1">
+                          <table>
+                          <tr  class="tr1">   
+                                        <th  class="th1"></th>                                        
+                                        <th class="th2"></th>                                        
+                                        <th  class="th3"></th>                                        
+                                        <th  class="th4"></th>                                        
+
+                          </tr>
+                                       <tr class="tr2">
+                                                 <td class="td1 tdc">    <p>Uchiha Itachi was a shinobi of Konohagakure's Uchiha clan who served as an Anbu Captain.
+                                                                                        one night Itachi and Tobi slaughtered the entire clan.   </p> 
+                                                                                        <img src="./img/itachi-info.png" class="i1">
+                                                                 <p>Itachi took it upon himself to 
+                                    personally execute his parents. Despite his betrayal, they bore him no ill-will, instead telling him
+                                     in the moments before they were killed that they were proud of him and requesting that he take care of Sasuke.</p>    </td>
+
+                                                 <td class="td2 tdc">
+                                              <p> Madara was one of the most powerful shinobi in history, 
+                                                recognised as the strongest Uchiha ever produced even decades after his death.Even by Uchiha standards, 
+                                                Madara was born with very powerful chakra,[43] described as very foul and evil. </p>  <img src="./img/madara-info.png" class="m1">     <p>  This is
+                                                   partly because he inherited Indra's chakra.[62]
+                                                   His large chakra reserves allowed him to fight nonstop for 24 hours before collapsing,[63] and in his old age,
+                                                   summon the Demonic Statue of the Outer Path from its cage in the moon. </p>
+                                                 </td>
+
+                                                 <td class="td3 tdc">
+                                                  <p> As a genin, Obito's abilities were average at best, struggling to match his classmates from the Academy. Determined to  </p> <img src="./img/Obit.png" class="o1">
+                                                   <p> improve himself, he trained for several months at a time to eventually become a chūnin. Madara saw great potential in Obito and thus selected him as his disciple</p>
+                                                 </td>
+
+                                                 <td class="td4 tdc">
+                                                  <p> Fugaku taught Sasuke how to perform the Great Fireball Technique, which he mastered in a week.
+                                                     Fugaku stated his pride in Sasuke for this accomplishment, but at the same time encouraged him not to follow in Itachi's footsteps.</p> <img src="./img/sasuke.png" class="s1">
+                                                      <p>After his final encounter with reincarnated Itachi, between learning of Itachi's struggles in life and knowing that
+                                                         Itachi made the choice willingly to become the villain for the sake of peace, Sasuke is left uncertain about what course to take.</p>
+                                                 </td>
+                                       </tr>
+                        </table>
+                      </div> </li>
+                       <li>
+                          <a href="#" class="ex1">Grid <i class="fa fa-angle-down"></i>    </a></li>
+                       <li>  
+                           <a href="#" class="ex1">Tap Bar <i class="fa fa-angle-down"></i>  </a></li>
+                       <li>
+                             <a href="#" class="ex1">Images <i class="fa fa-angle-down"></i> </a>
+                            <div class="div2">   <ul class="div-ul1">
+                                                   <li>
+                                                    <h4 class="god3 comm3">  God Of Genjutsu </h4>
+                                                    <a href="#" class="god2 "> <img src="./img/itachik-img.jpg" class="god1 comm2">  </a>
+                                                   </li>
+                                                   <li>
+                                                    <h4 class="comm3">Ghost Of The Uchiha</h4>
+                                                    <a href="#"><img src="./img/madara4.jpg" class="comm2"></a>
+                                                   </li>
+                                                   <li>
+                                                        <h4 class="comm3"> Uchiha sasuke</legend> </h4>
+                                                        <a href="#"> <img src="./img/sasuke3.jpg" class="comm2"></a>
+                                                   </li>
+                                                   <li>
+                                                    <h4 class="comm3">Uchiha Obito</h4>
+                                                     <a href="#"><img src="./img/obito3.jpg" class="comm2"></a>
+                                                   </li>
+                                                   <li>
+                                                              <h4 class="comm3">Shisui Uchiha</h4>
+                                                              <a href="#"> <img src="./img/shisui.jpg" class="comm2"></a>
+                                                   </li>
+                            </ul>     
+                          
+                              <ul class="div-ul2">
+                                     <p> <h3> Uchiha Abilities -</h3>The Uchiha Clan (うちは一族, Uchiha Ichizoku) is a well known clan of Konohagakure,
+                                       reputed to be the village's strongest because of their Sharingan and natural battle prowess. After helping found Konoha decades ago,
+                                        the Uchiha grew increasingly isolated from the village's affairs, 
+                                      culminating in most of their deaths during the Uchiha Clan Downfall.</p>
+                                      <li> <img src="./img/jk1.jpg" class="jk1"> </li>
+                                      <li> <img src="./img/jk5.jpg" class="jk1"> </li>
+                                      <li> <img src="./img/jk2.jpg" class="jk1"> </li>
+                                         <li><img src="./img/jk6.jpg" class="jk1"></li>
+                              </ul>  
+                          </div>
+                            </li>
+                      
+                             <li>
+                            <a href="#" class="ex1">Contact  <i class="fa fa-angle-down"></i> </a></li>
+                    </ul>    
+    </nav>
+</body>
+</html>
